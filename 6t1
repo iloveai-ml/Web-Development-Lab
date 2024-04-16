@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping List</title>
+<style>
+/* Some basic styling for the shopping list */
+body {
+font-family: Arial, sans-serif;
+}
+#container {
+width: 300px;
+margin: 20px auto;
+}
+ul {
+list-style-type: none;
+padding: 0;
+}
+li {
+margin-bottom: 5px;
+}
+.purchased {
+text-decoration: line-through;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<h1>Shopping List</h1>
+<input type="text" id="item" placeholder="Enter item...">
+<button onclick="addItem()">Add Item</button>
+<ul id="shopping-list"></ul>
+</div>
+
+<script>
+function addItem() {
+var itemInput = document.getElementById("item");
+var itemName = itemInput.value.trim();
+if (itemName !== "") {
+var listItem = document.createElement("li");
+listItem.textContent = itemName;
+listItem.onclick = function() {
+listItem.classList.toggle("purchased");
+};
+document.getElementById("shopping-list").appendChild(listItem);
+itemInput.value = "";
+}
+}
+</script>
+</body>
+</html>
