@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Add some style for the font size */
+#count {
+font-size: 1em;
+}
+</style>
+</head>
+<body>
+<button onclick="incrementCount()">Increment Count</button>
+<p id="count">Count: 0</p>
+<script>
+// Increment the count and update the paragraph text
+function incrementCount() {
+var count =
+parseInt(document.getElementById("count").textContent.split(' ')[1]);
+count++;
+document.getElementById("count").textContent = "Count: " + count;
+// Update the font size based on the count
+var fontSize = 1 + (count / 10);
+document.getElementById("count").style.fontSize = fontSize + "em";
+}
+</script>
+</body>
+</html>
