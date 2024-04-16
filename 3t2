@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+table {
+font-family: 'Arial', sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+th, td {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+/* Style odd rows with light gray background */
+tr:nth-child(odd) {
+background-color: #f2f2f285;
+}
+/* Style header row with white text and black background */
+th {
+background-color: black;
+color: white;
+font-size: 14px;
+}
+</style>
+<title>Styled Table</title>
+</head>
+<body>
+<table>
+<tbody>
+<tr>
+<td>Albania</td>
+<td>Tirana</td>
+<td>Albanian</td>
+</tr>
+<tr>
+<td>Papua New Guinea</td>
+<td>Port Moresby</td>
+<td>English</td>
+</tr>
+<tr>
+<td>Latvia</td>
+<td>Riga</td>
+
+<td>Latvian</td>
+</tr>
+<tr>
+<td>France</td>
+<td>Paris</td>
+<td>French</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
