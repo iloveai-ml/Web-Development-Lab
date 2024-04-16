@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jump Links</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 20px;
+}
+#top-link, #bottom-link {
+display: block;
+margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+<!-- Link at the top to jump to the bottom -->
+<a href="#bottom" id="top-link">Jump to Bottom</a>
+<h1>Welcome to Web Technology<h3>Shubhro Dev</h3></h1>
+<p>A computer science portal for B. Tech.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Page</title>
+</head>
+<body>
+<header>
+<h1>Mountains Amongst the Forest</h1>
+</header>
+<section>
+<img src="https://cff2.earth.com/uploads/2023/06/02100547/Mountain-2.jpg" alt="The Beautiful
+Himalayas as viewed from the dense green forests of Nepal" style="max-width: 100%; height: auto;">
+<p>
+This is a captivating image that captures the beauty of our Himalayas as it lies in
+
+silent green valleys of mother nature.
+</p>
+</section>
+</body>
+</html>
+<p>
+
+<h2>Web Technology
+<p>Web Technology refers to the various tools and techniques that are utilized in the process
+of communication between different types of devices over the Internet. A web browser is used
+to access web pages. Web browsers can be defined as programs that display text, data, pictures,
+animation, and video on the Internet.</p></h2>
+<p><h4>HTML</h4>
+HTML stands for Hypertext Markup Language. It is used to design the front-end portion of web
+pages using a markup language. HTML is the
+combination of Hypertext and Markup language. Hypertext defines the link between the web
+pages.</p>
+<p>JavaScript is a famous scripting language used to create magic on the sites to make the site
+interactive for the user. It is used to
+enhancing the functionality of a website to running cool games and web-based software.</p>
+</p>
+<!-- Link at the bottom to jump back to the top -->
+<a href="#top" id="bottom-link">Jump to Top</a>
+<!-- Add some content at the bottom to make the jump visible -->
+<div id="bottom">
+<h2>Bottom of the Page</h2>
+<!-- Add additional content here -->
+</div>
+</body>
+</html>
