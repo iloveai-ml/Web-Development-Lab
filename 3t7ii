@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Sudhanshu Singh - Favourite Teams</title>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="hobbies.html">Hobbies</a></li>
+<li><a href="teams.html">Teams</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="main-content">
+<h1>Welcome to My Favourite Teams</h1>
+<p>Cricket is my favourite sport. Cricket is a sport that is widely
+played across the globe and it is played by everyone irrespective of their
+caste, creed or colour. It is also called the Gentleman’s Game as it was played
+by British officers back in the 16th century.
+I play cricket every day in the evening with my neighbourhood friends.
+Although we don’t obey the rules of cricket, it is a great source of physical
+exercise and entertainment. We play in a team of 5 versus 5 whereas in this
+game of cricket each team has 11 members.</p>
+</section>
+</main>
+<footer>
+<p>&copy; 2024 Shubhro Dev. All rights reserved.</p>
+</footer>
+</body>
+</html>
