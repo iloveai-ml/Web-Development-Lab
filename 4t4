@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Content Change</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+padding-top: 50px;
+}
+main {
+background-color: #f0f0f0;
+padding: 20px;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+}
+.btn {
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+.btn:hover {
+background-color: #0056b3;
+}
+.new-content {
+font-size: 20px;
+color: #ff5733;
+font-weight: bold;
+text-transform: uppercase;
+margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Main Content</h1>
+<p>This is the original content of the main section.</p>
+</main>
+<div class="container">
+<button id="changeContentBtn" class="btn">Change Content</button>
+</div>
+<script>
+const changeContentBtn = document.getElementById('changeContentBtn');
+const mainContent = document.querySelector('main');
+changeContentBtn.addEventListener('click', function() {
+mainContent.innerHTML = `
+<h1>New Content</h1>
+<p class="new-content">This is the new content with different style.</p>
+`;
+});
+</script>
+</body>
+</html>
