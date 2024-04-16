@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table Sum</title>
+<style>
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+font-family: Arial, sans-serif;
+}
+button {
+padding: 10px 20px;
+font-size: 24px;
+margin-left: 10px;
+}
+td {
+font-size: 24px;
+}
+</style>
+<script>
+function addRow() {
+const table = document.getElementById('table');
+const currentCount = table.rows.length;
+const newRow = table.insertRow(-1);
+const sum = parseInt(table.rows[currentCount-2].cells[0].innerText) +
+parseInt(table.rows[currentCount-3].cells[0].innerText);
+const cell = newRow.insertCell(0);
+cell.innerText = sum;
+}
+</script>
+</head>
+<body>
+<button onclick="addRow()">Add Row</button>
+<table id="table">
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+</table>
+</body>
+
+</html>
