@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jump Links</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 20px;
+}
+#top-link, #bottom-link {
+display: block;
+margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Page</title>
+</head>
+<body>
+<header>
+<h1>Mountains Amongst the Forest</h1>
+</header>
+<section>
+<img src="https://cff2.earth.com/uploads/2023/06/02100547/Mountain-2.jpg" alt="The
+Beautiful Himalayas as viewed from the dense green forests of Nepal" style="max-width: 100%; height:
+auto;">
+<p>
+This is a captivating image that captures the beauty of our Himalayas as it lies in
+
+silent green valleys of mother nature.
+
+</p>
+</section>
+</body>
+</html>
+<!-- Link at the bottom to jump back to the top -->
+<a href="#top" id="bottom-link">Jump to Top</a>
+<!-- Add some content at the bottom to make the jump visible -->
+<div id="bottom">
+<h2>Bottom of the Page</h2>
+
+<!-- Add additional content here -->
+</div>
+</body>
+</html>
