@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Column Webpage</title>
+<style>
+body {
+font-family: 'Sans-serif';
+margin: 0;
+padding: 0;
+}
+.container {
+display: flex;
+width: 100%;
+}
+.column {
+flex: 1;
+padding: 20px;
+}
+.left-column {
+background-color: #f2f2f2; /* light gray */
+}
+.right-column {
+background-color: #ccffcc; /* light green */
+}
+ul {
+list-style-type: none;
+padding: 0;
+}
+li {
+margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="column left-column">
+<h2>Best Selling Books on Kindle</h2>
+<ul>
+<li>Book 1</li>
+<li>Book 2</li>
+
+<li>Book 3</li>
+<li>Book 4</li>
+<li>Book 5</li>
+</ul>
+</div>
+<div class="column right-column">
+<h2>Favorite Celebrities/Athletes</h2>
+<ul>
+<li>Celebrity/Athlete 1</li>
+<li>Celebrity/Athlete 2</li>
+<li>Celebrity/Athlete 3</li>
+<li>Celebrity/Athlete 4</li>
+<li>Celebrity/Athlete 5</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
