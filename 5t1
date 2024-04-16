@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spinning Word</title>
+<style>
+/* Add some basic styling */
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+font-family: Arial, sans-serif;
+}
+h2 {
+font-size: 48px;
+}
+input[type="text"] {
+padding: 10px;
+font-size: 24px;
+}
+button {
+padding: 10px 20px;
+font-size: 24px;
+margin-left: 10px;
+}
+</style>
+<script>
+// Add some JavaScript to handle the button click
+function spinWord() {
+const h2 = document.querySelector('h2');
+const input = document.querySelector('input[type="text"]');
+h2.innerText = input.value;
+h2.style.animation = 'spin 1s forwards';
+input.value = '';
+}
+</script>
+
+</head>
+<body>
+<h2>Hello</h2>
+<input type="text">
+<button onclick="spinWord()">Spin</button>
+<!--Add an animation rule to the CSS-->
+<style>
+@keyframes spin {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}
+</style>
+</body>
+</html>
