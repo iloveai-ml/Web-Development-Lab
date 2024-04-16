@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grilled Cheese Sandwiches with Bacon and Tomato</title>
+<style>
+body {
+font-family: 'Sans-serif';
+}
+h1 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+ul {
+list-style: none;
+padding: 0;
+}
+li {
+margin-bottom: 8px;
+padding-left: 20px;
+}
+.meat {
+background-color: #ffcccc; /* light red */
+}
+.vegetable {
+background-color: #ccffcc; /* light green */
+}
+.dairy {
+background-color: #ffffcc; /* light yellow */
+}
+.instructions {
+font-style: italic;
+}
+</style>
+</head>
+<body>
+<h1>Grilled Cheese Sandwiches with Bacon and Tomato</h1>
+<h2>Ingredients:</h2>
+<ul>
+
+<li class="meat">Bacon</li>
+<li class="dairy">Cheddar cheese slices</li>
+<li class="dairy">Butter</li>
+<li class="vegetable">Tomato slices</li>
+<li class="dairy">Bread slices</li>
+</ul>
+<h2 class="instructions">Instructions:</h2>
+<p>1. Cook the bacon until crispy.</p>
+<p>2. Butter one side of each bread slice.</p>
+<p>3. Place a slice of cheese, bacon, and tomato between two bread slices
+(buttered side out).</p>
+<p>4. Grill the sandwich until the bread is golden brown and the cheese is
+melted.</p>
+<p>5. Serve hot and enjoy!</p>
+</body>
+</html>
