@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Add some style for the font size */
+#countList {
+font-size: 1em;
+}
+</style>
+</head>
+<body>
+<button onclick="incrementCount()">Increment Count</button>
+<ul id="countList"></ul>
+<script>
+// Increment the count and add a new list item
+function incrementCount() {
+var countList = document.getElementById("countList");
+var count = countList.children.length + 1;
+var listItem = document.createElement("li");
+listItem.textContent = "Count: " + count;
+// Update the font size based on the count
+var fontSize = 1 + (count / 10);
+listItem.style.fontSize = fontSize + "em";
+// Add the list item to the list
+countList.appendChild(listItem);
+}
+</script>
+</body>
+</html>
