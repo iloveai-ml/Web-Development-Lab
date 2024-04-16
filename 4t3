@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Background Color</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+padding-top: 50px;
+color: red; /* Make the text red */
+font-size: 24pt; /* Change fontSize to 24pt */
+}
+.container {
+margin-top: 20px;
+}
+.btn {
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+.btn:hover {
+background-color: #0056b3;
+}
+.light-green-bg {
+background-color: lightgreen; /* Set background color directly with class attribute */
+}
+</style>
+</head>
+<body>
+<h1 id="heading">Change Background Color</h1>
+<button id="colorBtn" class="btn">Change Color</button> <!-- Added button after closing </h1> -->
+<script>
+alert("Before assigning the class attribute."); // Generate alert before assigning class attribute
+const colorBtn = document.getElementById('colorBtn');
+const body = document.body;
+const heading = document.getElementById('heading'); // Get the heading element
+colorBtn.addEventListener('click', function() {
+body.classList.add('light-green-bg'); // Set background color with class attribute
+heading.textContent = 'Color Changed!'; // Change the wording inside the <h1> tag
+colorBtn.textContent = 'Color Changed!'; // Update button text
+});
+alert("After assigning the class attribute."); // Generate alert after assigning class attribute
+</script>
+</body>
+</html>
