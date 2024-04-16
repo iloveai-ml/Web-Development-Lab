@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Math Operations</title>
+<style>
+body {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+font-family: Arial, sans-serif;
+}
+input[type="text"] {
+padding: 10px;
+font-size: 24px;
+margin-bottom: 10px;
+}
+button {
+padding: 10px 20px;
+font-size: 24px;
+margin-right: 10px;
+}
+span {
+font-size: 24px;
+}
+</style>
+<script>
+function performOperation(operation) {
+const value1 = Number.parseInt(document.querySelector("#in1id").value);
+const value2 = Number.parseInt(document.querySelector("#in2id").value);
+let result;
+switch (operation) {
+case '+':
+result = value1 + value2;
+break;
+case '-':
+result = value1 - value2;
+break;
+case '*':
+result = value1 * value2;
+break;
+case '/':
+result = value1 / value2;
+
+break;
+}
+document.querySelector("#result").innerText = `Result: ${result}`;
+}
+</script>
+</head>
+<body>
+<input type="text" id="in1id">
+<input type="text" id="in2id">
+<button onclick="performOperation('+')">+</button>
+<button onclick="performOperation('-')">-</button>
+<button onclick="performOperation('*')">*</button>
+<button onclick="performOperation('/')">/</button>
+<span id="result"></span>
+</body>
+</html>
