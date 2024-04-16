@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countries and Languages</title>
+</head>
+<body>
+<ol type="I">
+<li>
+<p>India</p>
+<ol type="i">
+<li>Hindi</li>
+<li>Marathi</li>
+</ol>
+</li>
+<li>
+<p>Bangladesh</p>
+<ol type="i">
+<li>Bengali</li>
+<li>Urdu</li>
+</ol>
+</li>
+<li>
+<p>France</p>
+<ol type="i">
+<li>French</li>
+<li>Spanish</li>
+</ol>
+</li>
+</ol>
+</body>
+</html>
