@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Country Information</title>
+<style>
+table {
+border-collapse: collapse;
+width: 50%;
+}
+th, td {
+border: 1px solid black;
+padding: 8px;
+text-align: left;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<th>Country</th>
+<th>President</th>
+<th>Politicians</th>
+</tr><tr>
+<td rowspan="2">Turkmenistan</td>
+<td>President</td>
+<td>Gurbanguly Berdimuhamedow</td>
+</tr>
+<tr>
+<td>Vice-President</td>
+<td>Raşit Meredow</td>
+</tr><tr>
+<td>Eritrea</td>
+<td>President</td>
+<td>Isaias Afwerki</td>
+</tr>
+</table>
+</body>
+</html>
