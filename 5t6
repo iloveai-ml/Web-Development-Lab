@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Creating Elements Dynamically</title>
+</head>
+<body>
+<h2 id="greeting">Hello</h2>
+<input type="text" id="userInput" />
+<button onclick="changeGreeting()">Submit</button>
+<script>
+// Create a new h2 element
+function createNewGreeting(text) {
+const newGreeting = document.createElement("h2");
+newGreeting.textContent = text;
+return newGreeting;
+}
+// Replace the old h2 with the new one
+function changeGreeting() {
+const input = document.getElementById("userInput");
+const greeting = document.getElementById("greeting");
+// Remove the old h2 and add the new one
+greeting.parentNode.replaceChild(createNewGreeting(input.value),
+greeting);
+}
+// Create and add a new list item to the unordered list
+function addListItem() {
+const input1 = document.querySelector("#in1id");
+const input2 = document.querySelector("#in2id");
+const operator = document.querySelector("#operator");
+const result = document.querySelector("#result");
+const list = document.getElementById("myList");
+const listItem = document.createElement("li");
+listItem.textContent = result.textContent + " " + operator.value + " "
++ input1.value + " " + input2.value;
+list.appendChild(listItem);
+}
+</script>
+
+</body>
+</html>
