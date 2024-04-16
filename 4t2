@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Background Color</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+padding-top: 50px;
+background-color: lightgreen; /* Change background color to light green */
+color: red; /* Make the text red */
+font-size: 48pt; /* Change fontSize to 48pt */
+}
+.container {
+margin-top: 20px;
+}
+.btn {
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+.btn:hover {
+background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<h1 id="heading">Change Background Color</h1>
+<button id="colorBtn" class="btn">Change Color</button> <!-- Added button after closing </h1> -->
+<script>
+const colorBtn = document.getElementById('colorBtn');
+const body = document.body;
+const heading = document.getElementById('heading'); // Get the heading element
+colorBtn.addEventListener('click', function() {
+body.style.backgroundColor = 'lightgreen'; // a. Make the background light green.
+body.style.color = 'red'; // b. Make the text red.
+body.style.fontSize = '48pt'; // c. Change fontSize to 48pt.
+heading.textContent = 'Color Changed!'; // d. Change the wording inside the <h1> tag
+colorBtn.textContent = 'Color Changed!'; // Update button text
+});
+</script>
+</body>
+</html>
